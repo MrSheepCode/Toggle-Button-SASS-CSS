@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container input:checked + .button {
+  background-color: #20096d;
+}
+.container input:checked + .button::before {
+  transform: translateX(100px);
+}
+.container input {
+  display: none;
+}
+.container .button {
+  background-color: #f3e4e4;
+  width: 12.5rem;
+  height: 6.25rem;
+  border-radius: 12.5rem;
+  cursor: pointer;
+  position: relative;
+  transform: 0.4s;
+}
+.container .button::before {
+  position: absolute;
+  content: "";
+  background-color: rgb(238, 218, 218);
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 12.5rem;
+  margin: 5px;
+  transition: 0.4s;
+}
+
+body {
+  background: linear-gradient(78deg, #246655, #273733, #3f8472, #6e843f, #8a648b, #d915de, #157ede);
+  background-size: 1400% 1400%;
+  animation: AnimationName 35s ease infinite;
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 13%;
+  }
+  50% {
+    background-position: 100% 88%;
+  }
+  100% {
+    background-position: 0% 13%;
+  }
+}/*# sourceMappingURL=main.css.map */
